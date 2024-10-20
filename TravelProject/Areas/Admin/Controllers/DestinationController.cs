@@ -8,6 +8,7 @@ using TravelProject.Entities;
 
 namespace TravelProject.Areas.Admin.Controllers
 {
+    [Authorize]
     public class DestinationController : Controller
     {
         // GET: Admin/Destination
