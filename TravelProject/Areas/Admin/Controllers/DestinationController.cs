@@ -35,6 +35,7 @@ namespace TravelProject.Areas.Admin.Controllers
         public ActionResult DeleteDestination(int id)
         {
             var value = context.Destinations.Find(id);
+            context.Destinations.Remove(value);
             context.SaveChanges();
             return RedirectToAction("DestinationList", "Destination", "Admin");
         }
