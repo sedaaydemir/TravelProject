@@ -9,7 +9,7 @@ using TravelProject.Entities;
 namespace TravelProject.Areas.Admin.Controllers
 {
     public class CategoryController : Controller
-    {
+    { 
         TravelContext context= new TravelContext();
         public ActionResult CategoryList()
         {
